@@ -38,6 +38,34 @@ This function formats the value paramaters to the placeholder,which is defined b
 
 ### Q3 - Abbreviate a Two Word Name
 ###### Write a function to convert a name, which is in the format of *"Harry Potter"*, that has "one space" between the first name and the surname into initials with a dot between them *"H.P"*.
+### Solution
+###### abbreviateName.py
+`join()` **:** <br/>
+Syntax: <br/>
+`join(iterable)` <br/>
+It is a string method that joins the elements of iterables, which are list,tuple,dict,set and string, with a string seperator  <br/> <br/> 
+**Example**
+# .join() with lists
+numList = ['1', '2', '3', '4']
+separator = ', '
+print(separator.join(numList)) <br/>
+
+`split()` **:** <br/>
+Syntax: <br/>
+`split(seperator,split_MAX)` <br/>
+This method returns a string list after breaking the string with a specified seperator.<br/>
+seperator : splits the string with a specified delimeter. If it is not specified, splits the string with respect to "white space" character by default.<br/>
+split_MAX : decides the maximum number of times given string to be splitted. It's end of the line by default. <br/>
+**Example**
+txt = "apple#banana#cherry#orange"
+
+# setting the maxsplit parameter to 1, will return a list with 2 elements!
+x = txt.split("#", 1)
+print(x)
+
+Output
+['apple', 'banana#cherry#orange']
+
 
 
 
