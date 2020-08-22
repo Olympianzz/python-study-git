@@ -77,15 +77,64 @@ Output
 
 
 ### Q5 - Travel Unique Places
-######  Imagine you're in a travel to visit some countries in the Europe -- you want to travel every country withour serial. If you went the same where "n" times, you're looking the integer list, a unique number corresponds to a country, in your hand to see your route from starting till the nth visit of the same country.
-The number "n" terminates the visit after n times travel the same country. Create a list of numbers corresponds to the countries visited.
+######  Imagine you're preparing a travel list to visit some countries in the Europe -- you want to travel every country at most "n" times. If you added the same country in your list "n" times, you will look to the integer list, a unique number corresponds to a country, in your hand to delete the countries you added "n+1" times.
+Create a list of numbers corresponds to the countries visited.
 ### Example
-Let's say your route is Berlin --> Munich --> Paris --> Oslo --> Vienna --> Munich. <br/>
-List is ls = [ 1, 2, 3, 4, 5, 2 ]
-### Some Examples 
-26 --> 2 + 6 = 8
-87 --> 7 + 8 = 15 --> 1 + 5 = 6
-99999999999271 --> 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 2 + 7 + 1 = 109 --> 1 + 9 = 10 --> 1 + 0 = 1 
+Let's say your route is Berlin --> Munich --> Berlin --> Munich --> Vienna --> Berlin --> Oslo --> Oslo --> London --> Oslo. <br/>
+Input list : [ 1, 2, 1, 2, 4, 1, 3, 3, 5, 3]
+After using `deleteRepeats(travelList,2)`
+Output : [ 1, 2, 1, 2, 4, 3, 3, 5]
+
 ### Solution
-###### recursiveDigits.py
+deleteRepeats.py
+
+### Q6 - Determine nonunique characters 
+######  Implement a method that counts the number of repetitive characters in a string.
+### Examples
+"Travel" --> 0
+"Tutorial" --> 1
+"CodeCODE" --> 4
+"Axe  " --> 2  # because of spaces
+
+### Solution
+countDuplicates.py
+
+`set()` **:** <br/>
+Syntax: <br/>
+`set(iteration)` <br/>
+This method takes an iterative data structure such as list, dict, string -- returns a set which contains unique elements as same as the set in math. <br/> <br/> 
+**Example**
+# initialize my_set
+my_set = {1, 3}
+print(my_set)
+
+# if you uncomment line 9,
+# you will get an error
+# TypeError: 'set' object does not support indexing
+
+# my_set[0]
+
+# add an element
+# Output: {1, 2, 3}
+my_set.add(2)
+print(my_set)
+
+# add multiple elements
+# Output: {1, 2, 3, 4}
+my_set.update([2, 3, 4])
+print(my_set)
+
+# add list and set
+# Output: {1, 2, 3, 4, 5, 6, 8}
+my_set.update([4, 5], {1, 6, 8})
+print(my_set)
+
+`count()` **:** <br/>
+Syntax: <br/>
+`count(substring, start, end)` <br/>
+Counts the number of occurences of a given substring.
+
+
+
+
 
