@@ -66,6 +66,26 @@ print(x)
 Output
 ['apple', 'banana#cherry#orange']
 
+### Q4 - Recursive Sum of All The Digits in a Number
+###### Write a function calculate the sum of the digits of a given natural number recurisely until the number becomes one digit. 
+### Some Examples 
+26 --> 2 + 6 = 8
+87 --> 7 + 8 = 15 --> 1 + 5 = 6
+99999999999271 --> 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 2 + 7 + 1 = 109 --> 1 + 9 = 10 --> 1 + 0 = 1 
+### Solution
+###### recursiveDigits.py
 
 
+### Q5 - Travel Unique Places
+######  Imagine you're in a travel to visit some countries in the Europe -- you want to travel every country withour serial. If you went the same where "n" times, you're looking the integer list, a unique number corresponds to a country, in your hand to see your route from starting till the nth visit of the same country.
+The number "n" terminates the visit after n times travel the same country. Create a list of numbers corresponds to the countries visited.
+### Example
+Let's say your route is Berlin --> Munich --> Paris --> Oslo --> Vienna --> Munich. <br/>
+List is ls = [ 1, 2, 3, 4, 5, 2 ]
+### Some Examples 
+26 --> 2 + 6 = 8
+87 --> 7 + 8 = 15 --> 1 + 5 = 6
+99999999999271 --> 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 2 + 7 + 1 = 109 --> 1 + 9 = 10 --> 1 + 0 = 1 
+### Solution
+###### recursiveDigits.py
 
